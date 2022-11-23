@@ -1,0 +1,480 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/* Global CSS */
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+/* Header Section */
+
+header {
+
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+	position: relative;
+	padding: 8px;
+	margin: 11px 0 6px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #28377e;
+    letter-spacing: -1px;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link::after {
+	content: "";
+	position: absolute;
+	width: 0%;
+	height: 2px;
+	bottom: 0;
+	left: 50%;
+	background: #f2622c;
+	transition: all 0.3s ease-in-out;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover::after {
+	width: 100%;
+	left: 0;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+	color: #f2622c;
+}
+
+/* Banner Section */
+
+.banner-section {
+	background: url(../images/banner-bg.png) no-repeat center top;
+	background-size: cover;
+	padding: 80px 0;
+}
+
+.banner-content h2 {
+	padding: 100px;
+	text-align: center;
+    font-size: 62px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+}
+
+.banner-content h2 span {
+	display: block;
+}
+
+.banner-content .fa-chevron-down {
+	display: block;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+
+/* About Us Section */
+
+.about-us {
+	padding: 100px 0;
+}
+
+.about-separater {
+	margin: 15px 0;
+	width: 12%;
+    height: 3px;
+    background: #f2622c;
+}
+.about-content h2 {
+	font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #28377e;
+    letter-spacing: -1px;
+}
+
+.about-content p {
+	margin: 12px 0 0;
+	font-size: 16px;
+	color: #b0b0b1;
+	line-height: 26px;
+}
+
+.about-img {
+	margin: 0 80px;
+}
+
+/* Service Section */
+
+.service-section {
+	position: relative;
+	padding: 100px 0;
+	background: #f7f8f8;
+}
+
+.service-section::before {
+	content: "";
+    position: absolute;
+    width: 74%;
+    height: 74%;
+    right: 0;
+    bottom: 0;
+    background: url(../images/service-bg.png) no-repeat right bottom;
+}
+
+.service-separator {
+	margin: 12px auto;
+    width: 6%;
+    height: 3px;
+    background: #f2622c;
+}
+
+.service-head h2 {
+	text-align: center;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #28377e;
+}
+
+.service-content {
+	margin-top: 50px;
+}
+
+.service-item {
+	position: relative;
+}
+
+.service-item img {
+	width: 95%;
+	height: auto;
+}
+
+.service-item .content-item {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.service-item .content-item h3 {
+	margin-top: 58%;
+	text-align: center;
+	font-size: 26px;
+	line-height: 38px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.service-item .content-item h3 span {
+	display: block;
+}
+
+.service-item .content-item a .fa-arrow-right-long {
+	position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 68px;
+    left: 0;
+    color: #fff;
+    font-size: 28px;
+}
+
+/* Our Attornery Section */
+
+.service-attorney {
+	padding: 150px 0;
+	background: url(../images/attorney-bg.png) no-repeat center top;
+	background-size: cover;
+}
+
+.attorney-separator {
+	margin: 0 0 12px;
+    width: 17%;
+    height: 3px;
+    background: #f2622c;
+}
+
+.attorney-heading h2 {
+	text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.attorney-heading h2 span {
+	display: block;
+}
+
+.attorney-heading p {
+	margin: 30px 0 0;
+    line-height: 28px;
+	font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.attorney-heading a p {
+	margin: 50px 0 0;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    color: #f2622c;
+    letter-spacing: -0.5px;
+}
+
+.attorney-item {
+	position: relative;
+}
+
+.attorney-item img {
+	width: 90%;
+}
+
+.attorney-content {
+	position: absolute;
+    bottom: 25px;
+    width: 100%;
+    left: 25px;
+}
+
+.attorney-content h3 {
+	color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.attorney-content h3 span {
+	display: block;
+}
+
+.attorne-mt {
+	margin-top: 52px;
+}
+
+.attorney-padding {
+	padding: 0;
+}
+
+/* The Language Section */
+
+.language-section {
+	padding: 100px 0;
+}
+
+.language-separator {
+	margin: 12px auto;
+    width: 6%;
+    height: 3px;
+    background: #f2622c;
+}
+
+.language-content h2 {
+	text-align: center;
+	text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 700;
+    color: #28377e;
+}
+
+.item-row {
+	margin-top: 75px;
+}
+
+.languages-item h3 {
+	text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    color: #28377e;
+}
+
+.languages-item p {
+	line-height: 25px;
+    margin-top: 16px;
+	font-size: 16px;
+    font-weight: 500;
+    color: #b0b0b1;
+}
+
+.languages-item a p {
+	font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #f2622c;
+}
+
+/* Contact Section */
+
+.contact-section {
+	background: #28377e;
+	padding: 100px 0;
+}
+
+.contact-separator {
+	margin: 12px auto;
+    width: 6%;
+    height: 3px;
+    background: #f2622c;
+}
+
+.contact-section h2 {
+	text-align: center;
+	text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+}
+
+
+.contact-form {
+	margin-top: 50px;
+}
+.form-control {
+	width: 50%;
+    margin: 0 auto;
+	background: transparent;
+    border: none;
+    border-bottom: 1px solid #4759a7;
+    border-radius: 0;
+    color: #fff;
+    padding: 8px 0;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+.form-control:focus {
+	box-shadow: none !important;
+}
+
+.form-control::placeholder {
+	color: #fff;
+	font-size: 14px;
+}
+
+.btn-submit {
+	position: relative;
+	margin: 50px auto 0;
+    display: block;
+    padding: 8px 54px;
+    border: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: #f2622c;
+    color: #fff;
+    font-weight: 600;
+    z-index: 1;
+}
+
+.btn-submit::after {
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 0%;
+	right: 0;
+	top: 0;
+	background: #fff;
+	z-index: -1;
+	transition: all 0.4s;
+}
+
+.btn-submit:hover::after {
+	left: 0;
+	width: 100%;
+	right: auto;
+}
+
+.btn-submit:hover{
+	color: #000;
+}
+
+/* Footer Section */
+
+footer {
+	padding: 10px 0;
+	background: #0c1234;
+}
+
+footer p {
+	margin: 26px 0 0;
+	color: #616ca8;
+	text-align: center;
+}
+
+.social-media {
+	text-align: center;
+}
+
+.social-media ul li {
+	display: inline;
+	margin: 0 7px;
+}
+
+.social-media ul li a .fa-brands {
+	margin: 26px 0 0;
+	color: #fff;
+	font-size: 18px;
+	transition: all 0.3s ease-in-out;
+}
+
+.social-media ul li a .fa-brands:hover {
+	color: #f2622c;
+}
+
+/* Responsive Mobile */
+
+@media (min-width: 320px) and (max-width: 576px) {
+	.navbar-brand img { padding: 20px 0;}
+	.navbar-expand-lg .navbar-nav .nav-link {text-align: right;}
+	.banner-section {padding: 50px 0;}
+	.banner-content h2 {padding: 0px; font-size: 26px;}
+	.banner-content .fa-chevron-down {margin-top: 36px;}
+	.about-us { padding: 30px 0;}
+	.about-separater {display: block; margin: 14px auto;}
+	.about-content h2 {text-align: center; font-size: 26px;}
+	.about-content p {text-align: center;}
+	.about-img {margin: 35px auto 18px;}
+	.service-section {padding: 30px 0;}
+	.service-section::before {background: #fff;}
+	.service-separator {width: 10%;}
+	.service-head h2 {font-size: 26px;}
+	.service-content {margin-top: 25px;}
+	.service-item {margin-bottom: 18px;}
+	.service-item img {width: 100%;}
+	.service-attorney {padding: 30px 0;}
+	.attorney-separator {display: block; margin: 14px auto}
+	.attorney-heading h2 {font-size: 26px;text-align: center;}
+	.attorney-heading p {margin: 12px 0 0; text-align: center;}
+	.attorney-heading a p {margin: 25px 0 0;}
+	.attorne-mt {margin-top: -24px;}
+	.attorney-padding {padding: 25px;}
+	.attorney-item img {width: 100%;}
+	.language-section {padding: 30px 0;}
+	.language-separator {width: 12%;}
+	.language-content h2 {font-size: 26px;}
+	.item-row {margin-top: 35px;}
+	.languages-item h3 {text-align: center; font-size: 20px;}
+	.languages-item p {text-align: center;}
+	.languages-item a p {font-size: 16px; margin: 0 0 30px;}
+	.contact-section {padding: 30px 0;}
+	.contact-separator {width: 12%;}
+	.contact-section h2 {font-size: 26px;}
+	.contact-form {margin-top: 25px;}
+	.form-control {width: 80%;}
+}
